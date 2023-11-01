@@ -57,7 +57,9 @@ html {
 
 .contenedor__principal {
     min-width: 200px;
-    width: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     background: var(--Light-Grayish-Violet);
     position: relative;
     z-index: -100;
