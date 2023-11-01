@@ -1,0 +1,438 @@
+:root {
+    /* ## Colors
+
+### Primary
+
+#### Text */
+/* (sub-heading at the top of the app UI) */
+--Pale-Violet: hsl(276, 100%, 81%);
+
+/* (chat on the left) */
+--Moderate-Violet: hsl(276, 55%, 52%);
+
+/* (chat on the right) */
+--Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+
+/* (placeholder text) */
+--Grayish-Blue: hsl(206, 6%, 79%);
+
+/* (main heading) */
+--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+
+/* (paragraph) */
+--Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+/* #### Gradients */
+
+/* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+--Light-Magenta: hsl(293, 100%, 63%);
+--Light-Violet: hsl(264, 100%, 61%);
+
+/* ### Secondary */
+
+--White: hsl(0, 0%, 100%);
+
+/* (app background) */
+--Light-Grayish-Violet: hsl(270, 20%, 96%);
+
+/* (submit button background) */
+--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+
+/* (radio button outline) */
+--Very-Light-Magenta: hsl(289, 100%, 72%);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+.contenedor__principal {
+    min-width: 200px;
+    width: 100vh;
+    background: var(--Light-Grayish-Violet);
+    position: relative;
+    z-index: -100;
+}
+
+.contenedor__principal .contenedor__fondo-top {
+    width: 230px;
+    height: 600px;
+    position: absolute;
+    background: linear-gradient(to top, var(--Light-Violet) -20%, var(--Light-Magenta)180%);
+    z-index: -50;
+    border-radius: 0 0 100% 0;
+    transition: width .5s, height .5s;
+}
+
+.contenedor__secundario {
+    min-width: 200px;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    
+}
+
+.contenedor__secundario .celular {
+    border: 15px solid var(--White);
+    width: 85%;
+    max-width: 400px;
+    min-width: 315px;
+    margin: 0 auto;
+    border-radius: 40px;
+    position: relative;
+    background: var(--Light-Grayish-Violet);
+    box-shadow: 2px 10px 50px -30px ;
+}
+
+.contenedor__secundario .celular .contenedor__marca-blanca-top {
+    background: var(--White);
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    outline: none;
+    border-radius: 30px;
+    z-index: 50;
+}
+
+.contenedor__secundario .celular .foto-nombre {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    height: 95px;
+    position: relative;
+    background: linear-gradient(to right, var(--Light-Violet)18%, var(--Light-Magenta) 92% );
+    border-radius: 30px 30px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.contenedor__secundario .celular .foto-nombre i {
+    color: var(--White);
+    font-size: 12px;
+}
+
+.contenedor__secundario .celular .foto-nombre .flecha-izquierda {
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+    opacity: .6;
+}
+
+.contenedor__secundario .celular .foto-nombre img{
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+}
+
+.contenedor__secundario .celular .foto-nombre .contenedor__nombre {
+    position: relative;
+    top: 16px;
+    right: 10px;
+    font-size: .77rem;
+    color: var(--White);
+    font-weight: 400;
+}
+
+.contenedor__secundario .celular .foto-nombre .contenedor__nombre h1{
+    opacity: .77;
+}
+
+.contenedor__secundario .celular .foto-nombre .contenedor__nombre p {
+    color: var(--Grayish-Blue);
+    font-size: .66rem;
+    margin-top: 3px;
+}
+
+.contenedor__secundario .celular .foto-nombre .icon__3puntos {
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
+    opacity: .6;
+}
+
+.contenedor__secundario .celular .msj__1y2 {
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 55%;
+    font-size: .6rem;
+    color: var(--Moderate-Violet);
+    font-weight: 500;
+    line-height: 13.9px;
+}
+
+.contenedor__secundario .celular .msj__1y2 .msj__1y2--p1,
+.contenedor__secundario .celular .msj__1y2 .msj__1y2--p2 {
+    background: var(--Light-Grayish-Violet);
+    box-shadow: 1px 1px 5px 1px var(--Grayish-Blue);
+    padding: 8px 12px 8px 10px;
+    border-radius: 10px 10px 10px 5px;
+}
+
+.contenedor__secundario .celular .msj__1y2 .msj__1y2--p1 {
+    margin-bottom: 10px;
+}
+
+.contenedor__secundario .celular .img__perro {
+    display: flex;
+    justify-content: end;
+    margin: 10px 5px 10px 0;
+}
+
+.contenedor__secundario .celular .img__perro img {
+    width: 55px;
+    margin: 5px;
+    border-radius: 14px;
+}
+
+.contenedor__secundario .celular .msj__3y4 {
+    position: relative;
+    left: 118px;
+    margin: 10px 0;
+    width: 57.5%;
+    padding-right: 2px;
+    font-size: .6rem;
+    color: var(--Desaturated-Dark-Violet);
+    font-weight: 500;
+    line-height: 13.9px;
+}
+
+.contenedor__secundario .celular .msj__3y4 .msj__3y4--p1,
+.contenedor__secundario .celular .msj__3y4 .msj__3y4--p2 {
+    background: var(--White);
+    box-shadow: 1px 1px 5px 1px var(--Grayish-Blue);
+    padding: 8px 12px 8px 10px;
+    border-radius: 10px 10px 5px 10px;
+    margin-right: 4px;
+}
+
+.contenedor__secundario .celular .msj__3y4 .msj__3y4--p1 {
+    margin-bottom: 10px;
+}
+
+.contenedor__secundario .celular .msj__3y4 .msj__3y4--p2 {
+    width: 105px;
+    position: relative;
+    left: 57px;
+}
+
+.contenedor__secundario .celular .msj__5 {
+    margin: 20px 0 10px 10px;
+    width: 55%;
+    font-size: .6rem;
+    color: var(--Moderate-Violet);
+    font-weight: 500;
+    line-height: 13.9px;
+    padding: 8px 12px 8px 10px;
+    background: var(--Light-Grayish-Violet);
+    box-shadow: 1px 1px 5px 1px var(--Grayish-Blue);
+    border-radius: 10px 10px 10px 5px;
+}
+
+.contenedor__secundario .celular .precios {
+    width: 69%;
+    margin: 10px 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor__secundario .celular .precios .precios__30min,
+.contenedor__secundario .celular .precios .precios__60min {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, var(--Light-Violet)18%, var(--Light-Magenta) 92% );
+    margin: 5px 0;
+    height: 39px;
+    padding: 0 20px 0 9px;
+    color: var(--White);
+    font-weight: 700;
+    border-radius: 10px 10px 10px 5px;
+}
+
+.contenedor__secundario .celular .precios span {
+    opacity: .9;
+}
+
+.contenedor__secundario .celular .precios .precios__30min--circulo,
+.contenedor__secundario .celular .precios .precios__60min--circulo {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    opacity: .5;
+}
+
+.contenedor__secundario .celular .precios .precios__30min p,
+.contenedor__secundario .celular .precios .precios__60min p {
+    font-size: .6rem;
+    font-weight: 400;
+    position: relative;
+    right: 18px;
+    color: var(--Light-Grayish-Violet);
+    opacity: .8;
+}
+
+.contenedor__secundario .celular .precios .precios__60min p {
+    right: 27px
+}
+
+.contenedor__secundario .celular .celular__envio-msj {
+    width: 100%;
+    margin: 10px 10px 38px 0;
+    position: relative;
+}
+
+    .contenedor__secundario .celular .celular__envio-msj .celular__envio-msj--textarea {
+    resize: none;
+    width: 90%;
+    height: 40px;
+    border-radius: 40px;
+    position: absolute;
+    left: 15px;
+    border: none;
+    font-weight: 400;
+}
+
+.contenedor__secundario .celular .celular__envio-msj .celular__envio-msj--textarea::placeholder {
+    position: relative;
+    top: 13px;
+    padding-left: 28px;
+    color: var(--Grayish-Blue);
+    font-size: .75rem;
+    letter-spacing: .6px;
+    /* font-weight: 400; */
+}
+
+.contenedor__secundario .celular .celular__envio-msj button {
+    position: relative;
+    z-index: 50;
+    left: 240px;
+    top: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--Very-Dark-Desaturated-Violet);
+}
+
+.contenedor__secundario .celular .celular__envio-msj button i {
+    color: var(--White);
+}
+
+.contenedor__secundario .ultimo__parrafo {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.contenedor__secundario .ultimo__parrafo h2 {
+    font-size: 2.9rem;
+    font-weight: 500;
+    color: var(--Very-Dark-Desaturated-Violet);
+}
+
+.contenedor__secundario .ultimo__parrafo p {
+    color: var(--Dark-Grayish-Violet);
+    line-height: 27px;
+    margin-top: 25px;
+    padding: 0 29px;
+    font-weight: 500;
+}
+
+.contenedor__principal .contenedor__fondo-buttom {
+    width: 230px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--Light-Violet);
+    opacity: .021;
+    z-index: -50;
+    border-radius: 100% 0 0 0;
+    transition: width .5s, height .5s;
+}
+
+
+@media screen and (min-width: 700px) {
+    .contenedor__principal .contenedor__fondo-top {
+        width: 300px;
+        height: 700px;
+        
+    }
+
+    .contenedor__principal .contenedor__fondo-buttom {
+        width: 300px;
+        height: 700px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .contenedor__principal .contenedor__fondo-top {
+        width: 370px;
+        border-radius: 0 0 70% 0;
+        
+    }
+
+    .contenedor__principal .contenedor__fondo-buttom {
+        width: 370px;
+        border-radius: 70% 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor__principal .contenedor__fondo-top {
+        width: 400px;
+        height: 730px;
+        border-radius: 0 0 70% 70px;
+        
+    }
+    
+    .contenedor__secundario {
+        max-width: 920px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .contenedor__secundario .celular {
+        max-width: 315px;
+        min-width: 315px;
+        box-shadow: 20px 25px 60px -50px;
+    }
+
+    .contenedor__principal .contenedor__fondo-buttom {
+        width: 400px;
+        height: 730px;
+        border-radius: 70% 70px 0 0;
+    }
+
+    .contenedor__secundario .ultimo__parrafo {
+        text-align: left;
+        margin-left: 120px;
+    }
+
+    .contenedor__secundario .ultimo__parrafo p {
+        padding: 0 10px 0 0;
+    }
+}
