@@ -438,3 +438,18 @@ html {
         padding: 0 10px 0 0;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    .contenedor__principal .contenedor__fondo-top {
+        width: 500px;
+        height: 830px;
+        border-radius: 0 0 70% 300px;
+        
+    }
+
+    .contenedor__principal .contenedor__fondo-buttom {
+        width: 500px;
+        height: 830px;
+        border-radius: 70% 300px 0 0;
+    }
+}
