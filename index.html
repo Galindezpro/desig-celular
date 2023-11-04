@@ -50,19 +50,21 @@
           <p class="msj__5--p1">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
         </article>
         <article class="precios">
-          <div class="precios__30min">
-            <div class="precios__30min--circulo"></div>
-            <p>30 minute walk</p>
-            <span>$29</span>
-          </div>
-          <div class="precios__60min">
-            <div class="precios__60min--circulo"></div>
-            <p>1 hour walk</p>
-            <span>$49</span>
-          </div>
+          <form>
+            <div class="precios__30min">
+                <input type="radio" class="precios__30min--circulo" name="precio" value="30min minute walk">
+                <p>30 minute walk</p>
+                <span>$29</span>
+              </div>
+              <div class="precios__60min">
+                <input type="radio" class="precios__60min--circulo" name="precio" value="1 hour walk">
+                <p>1 hour walk</p>
+                <span>$49</span>
+            </div>
+          </form>
         </article>
         <div class="celular__envio-msj">
-          <textarea name="enviar-mensaje" class="celular__envio-msj--textarea" placeholder="Type a message…"></textarea>
+          <input type="text" name="enviar-mensaje" class="celular__envio-msj--textarea" placeholder="Type a message…">
           <button><i class="fa-solid fa-chevron-up fa-rotate-90"></i></button>
         </div>
       </section>

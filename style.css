@@ -276,12 +276,9 @@ html {
     opacity: .9;
 }
 
-.contenedor__secundario .celular .precios .precios__30min--circulo,
-.contenedor__secundario .celular .precios .precios__60min--circulo {
+.contenedor__secundario .celular .precios input {
     width: 15px;
     height: 15px;
-    border-radius: 50%;
-    border: 1px solid var(--White);
     opacity: .5;
 }
 
@@ -306,7 +303,6 @@ html {
 }
 
     .contenedor__secundario .celular .celular__envio-msj .celular__envio-msj--textarea {
-    resize: none;
     width: 90%;
     height: 40px;
     border-radius: 40px;
@@ -317,13 +313,11 @@ html {
 }
 
 .contenedor__secundario .celular .celular__envio-msj .celular__envio-msj--textarea::placeholder {
-    position: relative;
-    top: 13px;
     padding-left: 28px;
     color: var(--Grayish-Blue);
     font-size: .75rem;
     letter-spacing: .6px;
-    /* font-weight: 400; */
+
 }
 
 .contenedor__secundario .celular .celular__envio-msj button {
@@ -443,13 +437,13 @@ html {
     .contenedor__principal .contenedor__fondo-top {
         width: 500px;
         height: 830px;
-        border-radius: 0 0 70% 300px;
+        border-radius: 0 0 30em 30em;
         
     }
 
     .contenedor__principal .contenedor__fondo-buttom {
         width: 500px;
         height: 830px;
-        border-radius: 70% 300px 0 0;
+        border-radius: 30em 25em 0 0;
     }
 }
